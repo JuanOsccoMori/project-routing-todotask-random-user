@@ -1,0 +1,38 @@
+<!-- Montamos el login form haciendo uso de componentes material -->
+<mat-card>
+  <!--Cabecera -->
+  <mat-card-header>
+    <mat-card-title>
+      Login
+    </mat-card-title>
+    <mat-card-subtitle>
+      Accede a tu cuenta
+    </mat-card-subtitle>
+  </mat-card-header>
+
+  <!-- Contenido -->
+  <mat-card-content>
+    <!-- Formulario del login -->
+    <form [formGroup]="loginFormValidate" (submit)="submitLogin()">
+      <mat-form-field>
+        <input matInput type="email" placeholder="email" formControlName="emailValidate">
+        <mat-error *ngIf="emailValidate?.errors?.['required'] && emailValidate?.touched">
+          EmailValidate es obligatorio
+        </mat-error>
+        <mat-error *ngIf="emailValidate?.errors?.['emailValidate'] && emailValidate?.touched">
+          El formato email no es correcto
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="password" placeholder="password" formControlName="passwordValidate">
+        <mat-error *ngIf="passwordValidate?.errors?.['required'] && passwordValidate?.touched">
+            el password es obligatorio
+        </mat-error>
+      </mat-form-field>
+      <!-- boton para hacer submit del formulario -->
+      <!-- Deshabilitado si el formulario de login es invalido -->
+      <button mat-raised-button color="primary" type="submit" [disabled]="loginFormValidate.invalid">Entrar</button>
+    </form>
+  </mat-card-content>
+  <!-- pie de carta -->
+</mat-card>

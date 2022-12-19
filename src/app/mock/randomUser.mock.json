@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Linda",
+        "last": "Colenbrander"
+      },
+      "location": {
+        "street": {
+          "number": 4603,
+          "name": "Deken de Hessellestraat"
+        },
+        "city": "Mijdrecht",
+        "state": "Limburg",
+        "country": "Netherlands",
+        "postcode": "8487 RR",
+        "coordinates": {
+          "latitude": "37.3299",
+          "longitude": "62.8056"
+        },
+        "timezone": {
+          "offset": "-8:00",
+          "description": "Pacific Time (US & Canada)"
+        }
+      },
+      "email": "linda.colenbrander@example.com",
+      "login": {
+        "uuid": "81227687-1a2e-4305-be40-0198cac36320",
+        "username": "beautifulbear177",
+        "password": "delete",
+        "salt": "Qj5pbwD3",
+        "md5": "f2e78c3b1b88e2ac95cc76b0ac0bd811",
+        "sha1": "e7f3be8dbadf3f869d3e32fedbec56406f4dc4b9",
+        "sha256": "fbe0a03fd5611aa6f60b3dafba0f5646fcef848f2507a95dfba64bb49a8e98ca"
+      },
+      "dob": {
+        "date": "1977-02-13T03:33:56.481Z",
+        "age": 45
+      },
+      "registered": {
+        "date": "2013-06-14T10:25:22.862Z",
+        "age": 9
+      },
+      "phone": "(0138) 679207",
+      "cell": "(06) 06753463",
+      "id": {
+        "name": "BSN",
+        "value": "11563863"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/76.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/76.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/76.jpg"
+      },
+      "nat": "NL"
+    }
+  ],
+  "info": {
+    "seed": "4ad1fb9b5111310e",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}

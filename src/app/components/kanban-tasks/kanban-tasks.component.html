@@ -1,0 +1,29 @@
+<div class="container">
+  <h2>To do</h2>
+
+  <div cdkDropList #todoList="cdkDropList" [cdkDropListData]="todoTask"
+      [cdkDropListConnectedTo]="doneList" class="list" (cdkDropListDropped)="drop($event)">
+    <ng-container *ngIf="todoTask.length === 0">
+      <h4 ngClass="mgs-enjoy">En hora buena no tienes tareas pendientes!! puedes crear nuevas!</h4>
+    </ng-container>
+    <div class="list-item" *ngFor="let item of todoTask" cdkDrag>
+      <app-task [item]="item" ></app-task>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <h2>Done</h2>
+
+  <div cdkDropList #doneList="cdkDropList" [cdkDropListData]="doneTask"
+      [cdkDropListConnectedTo]="todoList" class="list" (cdkDropListDropped)="drop($event)">
+      <ng-container *ngIf="doneTask.length === 0">
+        <h4 ngClass="msg-job">No tienes tareas completas</h4>
+      </ng-container>
+    <div [ngClass]="{'completed-task': item.completed}" class="list-item" *ngFor="let item of doneTask" cdkDrag>
+      <app-task [item]="item" ></app-task>
+    </div>
+  </div>
+</div>
+

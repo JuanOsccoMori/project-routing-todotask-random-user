@@ -1,0 +1,17 @@
+<h1>Juego del amigo invisible</h1>
+<h3>!Bienvenido!</h3>
+
+<ng-container *ngIf="contactSelectionate; else elseTemplate">
+  <p>Haz seleccionado a: {{ contactSelectionate.name.first }} </p>
+</ng-container>
+<ng-template #elseTemplate>
+  <p>Selecciona un amigo:</p>
+
+</ng-template>
+<div>
+  <p>filtros</p>
+  <a [routerLink]="['/dashboard/contacts']" [queryParams]="{genere: 'female'}">Companieras | </a>
+  <a [routerLink]="['/dashboard/contacts']" [queryParams]="{genere: 'male'}">Companieros</a>
+</div>
+
+<button mat-raised-button color="primary" (click)="navigationToContacts()">Ver contactos</button>
