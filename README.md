@@ -1,4 +1,7 @@
-# SecondClassNgRouting
+# Project Todo Task and Random User
+
+email = eve.holt@reqres.in
+pass = cityslicka
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
